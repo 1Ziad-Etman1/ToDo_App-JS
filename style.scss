@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(21, 46, 86);
+  color: beige;
+}
+
+.content {
+  width: 600px;
+  height: 100vh;
+  background-color: rgb(87, 26, 26);
+  border-radius: 15px;
+}
+
+.header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.input {
+  margin: 20px 30px;
+  display: flex;
+  justify-content: center;
+  .input-text {
+    width: 70%;
+    height: 35px;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 20px;
+  }
+  .input-text-2 {
+    width: 70%;
+    height: 35px;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 20px;
+  }
+  .input-text:focus {
+    outline: none;
+  }
+  .input-text-2:focus {
+    outline: none;
+  }
+  .add {
+    border-radius: 5px;
+    padding: 8px;
+    margin-left: 20px;
+    background-color: rgb(0, 119, 255);
+    cursor: pointer;
+  }
+  .update {
+    border-radius: 5px;
+    padding: 8px;
+    margin-left: 20px;
+    background-color: rgba(0, 255, 145, 0.717);
+    cursor: pointer;
+  }
+}
+
+.tasks-header {
+  margin-left: 20px;
+}
+
+.tasks {
+  padding: 0 15px;
+  margin-top: 30px;
+
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px 40px;
+    background-color: rgb(91, 34, 34);
+    cursor: pointer;
+    .task-text {
+      // width: 80%;
+      display: flex;
+      justify-content: start;
+      font-size: 20px;
+      color: rgb(245, 245, 220);
+      flex-wrap: wrap;
+    }
+    .delete {
+      font-size: 16px;
+      border-radius: 5px;
+      padding: 8px;
+      cursor: pointer;
+      background-color: red;
+    }
+    .edit {
+      font-size: 16px;
+      border-radius: 5px;
+      padding: 8px;
+      margin-right: 15px;
+      cursor: pointer;
+      background-color: rgb(0, 119, 255);
+      text-decoration: none;
+      color: beige;
+    }
+  }
+}
+
+.done {
+  opacity: 0.4;
+}
+
+.content-2 {
+  background-color: rgb(91, 34, 34);
+  width: 600px;
+  height: 180px;
+  padding: 15px;
+  border-radius: 12px;
+  .edit-header {
+    text-align: center;
+  }
+}
